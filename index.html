@@ -51,8 +51,11 @@
           To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
         </p>
         <code>
-
-        </code>
+          function greetMe(yourName) {
+            alert("Hello " + yourName); 
+          }
+        greetMe("World");
+        </code><br>
       </section>
       <section class="main-section" id="declaring_variables">
         <header>Declaring Variables</header>
@@ -61,7 +64,7 @@
           With the keyword var. For example,
         </p>
         <code>
-          
+          var x = 42.
         </code>
         <p>
           This syntax can be used to declare both local and global variables. <br>
@@ -69,13 +72,13 @@
           By simply assigning it a value. For example,
         </p>
         <code>
-          
+          x = 42.
         </code>
         <p>
           This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
         </p>
         <code>
-          
+          let y = 13.
         </code>
         <p>
           This syntax can be used to declare a block scope local variable. See Variable scope below.
@@ -90,13 +93,14 @@
           JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
         </p>
         <code>
-          
+          if (true) { var x = 5; } console.log(x); // 5
         </code>
         <p>
           This behavior changes, when using the let declaration introduced in ECMAScript 2015.
         </p>
         <code>
-          
+          if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+        defined
         </code>
       </section>
       <section class="main-section" id="data_types">

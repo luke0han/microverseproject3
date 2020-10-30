@@ -3,15 +3,39 @@ body{
 }
 @media (min-width: 768px) {
     #navbar {
-        width: 30%;
+        width: 20%;
         float: left;
+        min-height: 100vh;
+        border-right: 1px solid black;
+        padding-right: 0.4em;
+        overflow: scroll;
     }
-    
+
+    #main-doc {
+        width: 78%;
+        float: right;
+    }    
 }
 
-
-#navbar{ 
-    text-decoration: none;
-    min-height: 100vh
+#navbar a {
+    display: block;
+    text-decoration: none; 
+    padding: 0.3em 1.2em; 
+    border-top: 1px solid black;
+    color: black;
 }
 
+#navbar header {
+    font-size: x-large;
+    margin-bottom: 0.4rem;
+}
+
+.main-section header {
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+code {
+    background-color: #eee;
+    padding: 7px;
+}
